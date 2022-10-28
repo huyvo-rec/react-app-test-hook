@@ -11,7 +11,7 @@ interface Props {
 
 const Content = (props: Props) => {
   const { form } = props;
-  console.log("content form", form.fullname);
+
   return (
     <div className="content">
       <div className="content__container">
