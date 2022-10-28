@@ -36,15 +36,16 @@ const Auth = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className="wrapper__welcome">
-        <div className="wrapper__welcome--black">Create Acount,</div>
-        <div className="wrapper__welcome--gray">Sign up to get started!</div>
+    <div className="auth">
+      <div className="auth__welcome">
+        <div className="auth__welcome--black">Create Acount,</div>
+        <div className="auth__welcome--gray">Sign up to get started!</div>
       </div>
 
-      <form className="wrapper__form">
-        <FormItem form={form} handleInputChange={handleInputChange} />
-
+      <form className="auth__form">
+        <div className="form__input">
+          <FormItem form={form} handleInputChange={handleInputChange} />
+        </div>
         <div className="form__forgot-password">Forgot password?</div>
         <button
           type="button"
@@ -59,7 +60,7 @@ const Auth = () => {
         </button>
       </form>
 
-      <div className="wrapper__text">
+      <div className="auth__text">
         I'm already a member,<span>Sign In</span>
       </div>
     </div>

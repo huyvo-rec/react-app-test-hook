@@ -9,8 +9,8 @@ import "./brands.scss";
 
 const Brands = () => {
   return (
-    <div className="information__brands">
-      <div className="information__brands--item">
+    <div className="brands">
+      <div className="brands__item">
         <img src={logoANGEL} alt="logo" className="filter-gray" />
         <img src={logoMEDIUM} alt="logo" className="filter-gray" />
         <img src={logoOMS} alt="logo" className="filter-gray" />

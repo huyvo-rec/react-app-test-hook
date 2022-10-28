@@ -15,10 +15,16 @@ const Information = () => {
 
   return (
     <div className="information">
-      <div className="information__main">
-        <Header />
-        <Content form={form} />
-        <Brands />
+      <div className="information__container">
+        <div className="information__header">
+          <Header />
+        </div>
+        <div className="information__content">
+          <Content form={form} />
+        </div>
+        <div className="information__brands">
+          <Brands />
+        </div>
       </div>
     </div>
   );

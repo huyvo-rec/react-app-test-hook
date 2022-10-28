@@ -12,8 +12,8 @@ const FormItem = (props: Props) => {
   const { form, handleInputChange } = props;
 
   return (
-    <div className="form__item">
-      <div className="form__item-input">
+    <div className="input">
+      <div className="input__item">
         <input
           type="text"
           name="fullname"
@@ -23,7 +23,7 @@ const FormItem = (props: Props) => {
         />
         <label>Fullname</label>
       </div>
-      <div className="form__item-input">
+      <div className="input__item">
         <input
           type="text"
           name="email"
@@ -33,7 +33,7 @@ const FormItem = (props: Props) => {
         />
         <label>Email</label>
       </div>
-      <div className="form__item-input">
+      <div className="input__item">
         <input
           type="text"
           name="numberID"
@@ -44,7 +44,7 @@ const FormItem = (props: Props) => {
         />
         <label>Number ID</label>
       </div>
-      <div className="form__item-input">
+      <div className="input__item">
         <input
           type="text"
           name="expiryDate"

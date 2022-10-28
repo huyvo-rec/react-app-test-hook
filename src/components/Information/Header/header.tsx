@@ -4,16 +4,16 @@ import "./header.scss";
 
 const Header = () => {
   return (
-    <div className="information__header">
+    <div className="header">
       <div className="header__logo">
-        <div className="header__logo--img">
-          <div className="img__layout--1"></div>
-          <div className="img__layout--2"></div>
+        <div className="header__logo-img">
+          <div className="img__layout1"></div>
+          <div className="img__layout2"></div>
         </div>
-        <div className="header__logo--name font--mulish">finely</div>
+        <div className="header__logo-name font--mulish">finely</div>
       </div>
       <div className="header__menu">
-        <ul className="header__menu--list">
+        <ul className="header__menu-list">
           <li className="list__item font--mulish">Features</li>
           <li className="list__item font--mulish ">About</li>
           <li className="list__item font--mulish">Cards</li>
