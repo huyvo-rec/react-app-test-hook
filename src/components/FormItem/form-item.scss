@@ -1,0 +1,51 @@
+.form {
+  &__item {
+    margin-top: 100px;
+    display: grid;
+    gap: 25px;
+
+    &-input {
+      height: 40px;
+      width: 100%;
+      position: relative;
+      input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        border-radius: 10px;
+        padding: 0 20px;
+        border: 2px solid silver;
+        box-sizing: border-box;
+        &::placeholder {
+          color: transparent;
+        }
+        &:focus,
+        &:valid {
+          border: 2px solid #e8638e;
+          &::placeholder {
+            color: #a9a9a9;
+          }
+          ~ {
+            label {
+              transform: translate(-10px, -20px);
+              font-size: 15px;
+              background-color: white;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+
+      label {
+        position: absolute;
+        bottom: 12px;
+        left: 20px;
+        color: grey;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+:root {
+  --red--color: #d95853;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --gray-color: #c5c4be;
+  --silver-color: #e9eaef;
+  --green-color: #4b9d86;
+  --yellow-color: #e9d489;
+}
+
+* {
+  user-select: none;
+}
+
+.font-mulish {
+  font-family: "Mulish", sans-serif;
+}
+
+.information {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.information__main {
+  border-radius: 25px;
+  width: 100%;
+  /* border: 1px solid var(--gray-color); */
+  /* height: 500px; */
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px var(--gray-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.information__brands {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--silver-color);
+  /* height: 100px; */
+  justify-content: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /* border-right: 1px solid var(--red--color); */
+}
+
+.information__brands--item {
+  padding: 30px 100px;
+
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+img.filter-gray {
+  filter: invert(40%) sepia(43%) saturate(0%) hue-rotate(267deg)
+    brightness(101%) contrast(101%);
+  width: 120px;
+  text-align: start;
+}
